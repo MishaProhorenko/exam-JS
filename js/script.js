@@ -176,3 +176,67 @@ formCreatedGoodsBtn.addEventListener('mouseout', () => {
 	formCreatedGoodsBtn.style.backgroundColor = 'yellowgreen';
 })
 pageFormCreatedGoods.append(formCreatedGoodsBtn);
+
+
+let pageSearch = document.createElement('form');
+pageSearch.classList.add('page__search');
+pageSearch.classList.add('search');
+main.append(pageSearch);
+
+let searchContainer = document.createElement('div');
+searchContainer.classList.add('container-search__block');
+searchContainer.classList.add('container-search');
+pageSearch.append(searchContainer);
+
+let containerSearchBlock = document.createElement('div')
+containerSearchBlock.classList.add('container-search__block');
+searchContainer.append(containerSearchBlock);
+
+let containerSearchInput = document.createElement('input');
+containerSearchInput.classList.add('container-search__input');
+containerSearchInput.id = 'search';
+
+let containerSearchLabel = document.createElement('label');
+containerSearchLabel.classList.add('container-search__label');
+
+let iconSearch = document.createElement('i');
+iconSearch.classList.add('fas');
+iconSearch.classList.add('fa-search');
+containerSearchLabel.append(iconSearch);
+
+containerSearchBlock.append(containerSearchInput, containerSearchLabel);
+
+let searchPriceSegment = document.createElement('div');
+searchPriceSegment.classList.add('search__price-segment');
+searchPriceSegment.classList.add('price-segment');
+pageSearch.append(searchPriceSegment);
+
+let searchPriceSegmentCheapLabel = document.createElement('label');
+searchPriceSegmentCheapLabel.innerText = 'Cheap';
+let searchPriceSegmentCheapInput = document.createElement('input');
+searchPriceSegmentCheapInput.type = 'radio';
+searchPriceSegmentCheapInput.name = 'price';
+searchPriceSegmentCheapInput.style.marginLeft = '15px';
+searchPriceSegmentCheapInput.style.transform = 'scale(1.5)';
+searchPriceSegmentCheapLabel.append(searchPriceSegmentCheapInput);
+
+let searchPriceSegmentOptiomalLabel = document.createElement('label');
+searchPriceSegmentOptiomalLabel.innerText = 'Optiomal';
+let searchPriceSegmentOptiomalInput = document.createElement('input');
+searchPriceSegmentOptiomalInput.type = 'radio';
+searchPriceSegmentOptiomalInput.name = 'price';
+searchPriceSegmentOptiomalInput.style.marginLeft = '15px';
+searchPriceSegmentOptiomalInput.style.transform = 'scale(1.5)';
+searchPriceSegmentOptiomalLabel.append(searchPriceSegmentOptiomalInput);
+
+let searchPriceSegmentPremiumLabel = document.createElement('label');
+
+let searchPriceSegmentPremiumInput = document.createElement('input');
+searchPriceSegmentPremiumInput.type = 'radio';
+searchPriceSegmentPremiumInput.name = 'price';
+searchPriceSegmentPremiumInput.style.marginLeft = '15px';
+searchPriceSegmentPremiumInput.style.transform = 'scale(1.5)';
+searchPriceSegmentPremiumLabel.innerText = 'Premium';
+searchPriceSegmentPremiumLabel.append(searchPriceSegmentPremiumInput);
+
+searchPriceSegment.append(searchPriceSegmentCheapLabel, searchPriceSegmentOptiomalLabel, searchPriceSegmentPremiumLabel);

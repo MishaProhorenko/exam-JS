@@ -207,11 +207,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container-search__block {
-	width: 50%;
+	width: 70%;
 	height: 50px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
+	margin-bottom: 20px;
 }
 
 .container-search__input {
