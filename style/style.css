@@ -110,6 +110,9 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 20px 0;
 	width: 57%;
 	font-size: 1.2em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .block-input__date {
@@ -126,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .block-input__label {
-	width: 30%;
+	width: 28%;
 }
 
 .form-created-goods__price-segment {
@@ -241,19 +244,44 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 40px;
 }
 
-.carts {
-	width: 90%;
-	display: flex;
-	flex-wrap: wrap;
-}
+.page__gallary {}
 
-.cart {
-	width: 200px;
-	height: 200px;
-	margin: 20px;
-	border: 2px solid red;
+.gallary {}
+
+.gallary__title {}
+
+.gallary__carts {
+	width: 90%;
+	border: 1px solid red;
 }
 
 .gallary__title {
 	font-size: 4em;
 }
+
+.carts {}
+
+.carts__cart {
+	width: 200px;
+	height: 200px;
+	border: 1px solid red;
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cart {}
+
+.cart__img {}
+
+.cart__name {}
+
+.cart__article {}
+
+.cart__count {}
+
+.cart__price {}
+
+.cart__date {}
