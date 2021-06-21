@@ -8,10 +8,84 @@
 	<title>Exam JS</title>
 	<link rel="stylesheet" href="./style/style.css">
 	<script defer src="./js/script.js"></script>
+	<script src="https://kit.fontawesome.com/8425a35637.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+	<main class="page">
+		<h1 class="page__title">Mobile shop</h1>
+		<form action="" class="page__form-created-goods form-created-goods">
+			<div class="form-created-goods__main-info main-info">
+				<div class="main-info__block-input block-input">
+					<input class="block-input__input" type="text">
+					<label class="block-input__label" for="">Name</label>
+				</div>
+				<div class="main-info__block-input block-input">
+					<input class="block-input__input" type="text">
+					<label class="block-input__label" for="">Article</label>
+				</div>
+				<div class="main-info__block-input block-input">
+					<input class="block-input__input" type="number">
+					<label class="block-input__label" for="">Count</label>
+				</div>
+				<div class="main-info__block-input block-input">
+					<input class="block-input__input" type="number">
+					<label class="block-input__label" for="">Price</label>
+				</div>
+				<div class="main-info__block-input block-input">
+					<input class="block-input__date" type="date" />
+					<label class="block-input__label" for="">Creation date</label>
+				</div>
+			</div>
+			<div class="form-created-goods__price-segment price-segment">
+				<label for=""><input type="radio" name="price">Cheap</label>
+				<label for=""><input type="radio" name="price">Optiomal</label>
+				<label for=""><input type="radio" name="price">Premium</label>
+			</div>
+			<div class="form-created-goods__secondary-infomation secondary-infomation">
+				<div class="secondary-infomation__block-input block-input">
+					<input class="block-input__input" type="text">
+					<label class="block-input__label" for="">Picture</label>
+				</div>
+				<div class="secondary-infomation__description">
+					<label for="">Description</label>
+					<textarea name="" id="" cols="30"></textarea>
+				</div>
+			</div>
+			<div class="form-created-goods__btn">Submit</div>
+		</form>
 
+		<form class="page__search search">
+			<div class="search__container container-search">
+				<div class="container-search__block">
+					<input class="container-search__input" id="search"></input>
+					<label for="search" class="container-search__label"><i class="fas fa-search"></i></label>
+				</div>
+			</div>
+			<div class="search__price-segment price-segment">
+				<label for=""><input type="radio" name="price">Cheap</label>
+				<label for=""><input type="radio" name="price">Optiomal</label>
+				<label for=""><input type="radio" name="price">Premium</label>
+			</div>
+		</form>
+		<section class="page__gallary gallary">
+			<h2 class="gallary__title">Gallary</h2>
+			<div class="carts">
+				<div class="cart">Phone</div>
+				<div class="cart">Phone</div>
+				<div class="cart">Phone</div>
+				<div class="cart">Phone</div>
+				<div class="cart">Phone</div>
+				<div class="cart">Phone</div>
+				<div class="cart">Phone</div>
+				<div class="cart">Phone</div>
+				<div class="cart">Phone</div>
+				<div class="cart">Phone</div>
+			</div>
+
+
+		</section>
+	</main>
 </body>
 
 </html>
