@@ -10,12 +10,12 @@ pageTitle.innerText = 'Mobile shop';
 main.append(pageTitle);
 
 let pageFormCreatedGoods = document.createElement('form');
-pageFormCreatedGoods.classList.add('page__form-created-goods')
-pageFormCreatedGoods.classList.add('form-created-goods')
+pageFormCreatedGoods.classList.add('page__form-created-goods');
+pageFormCreatedGoods.classList.add('form-created-goods');
 main.append(pageFormCreatedGoods);
 
 let formCreatedGoodsMainInfo = document.createElement('div');
-formCreatedGoodsMainInfo.classList.add('form-created-goods__main-info')
+formCreatedGoodsMainInfo.classList.add('form-created-goods__main-info');
 formCreatedGoodsMainInfo.classList.add('main-info');
 pageFormCreatedGoods.append(formCreatedGoodsMainInfo);
 
@@ -96,23 +96,23 @@ mainInfoBlockInputDate.append(blockInputDate, blockInputLabelDate);
 
 
 let formCreatedGoodsPriceSegment = document.createElement('div');
-formCreatedGoodsPriceSegment.classList.add('form-created-goods__price-segment')
+formCreatedGoodsPriceSegment.classList.add('form-created-goods__price-segment');
 pageFormCreatedGoods.append(formCreatedGoodsPriceSegment);
 
 let priceSegmentCheapLabel = document.createElement('label');
 priceSegmentCheapLabel.innerText = 'Cheap';
 let priceSegmentCheapInput = document.createElement('input');
 priceSegmentCheapInput.type = 'radio';
-priceSegmentCheapInput.name = 'price'
+priceSegmentCheapInput.name = 'price';
 priceSegmentCheapInput.style.marginLeft = '15px';
 priceSegmentCheapInput.style.transform = 'scale(1.5)';
 priceSegmentCheapLabel.append(priceSegmentCheapInput);
 
 let priceSegmentOptiomalLabel = document.createElement('label');
-priceSegmentOptiomalLabel.innerText = 'Optiomal'
+priceSegmentOptiomalLabel.innerText = 'Optiomal';
 let priceSegmentOptiomalInput = document.createElement('input');
 priceSegmentOptiomalInput.type = 'radio';
-priceSegmentOptiomalInput.name = 'price'
+priceSegmentOptiomalInput.name = 'price';
 priceSegmentOptiomalInput.style.marginLeft = '15px';
 priceSegmentOptiomalInput.style.transform = 'scale(1.5)';
 priceSegmentOptiomalLabel.append(priceSegmentOptiomalInput);
@@ -121,23 +121,24 @@ let priceSegmentPremiumLabel = document.createElement('label');
 
 let priceSegmentPremiumInput = document.createElement('input');
 priceSegmentPremiumInput.type = 'radio';
-priceSegmentPremiumInput.name = 'price'
+priceSegmentPremiumInput.name = 'price';
 priceSegmentPremiumInput.style.marginLeft = '15px';
 priceSegmentPremiumInput.style.transform = 'scale(1.5)';
-priceSegmentPremiumLabel.innerText = 'Premium'
+priceSegmentPremiumLabel.innerText = 'Premium';
 priceSegmentPremiumLabel.append(priceSegmentPremiumInput);
 
 formCreatedGoodsPriceSegment.append(priceSegmentCheapLabel, priceSegmentOptiomalLabel, priceSegmentPremiumLabel);
 
 
 let formCreatedGoodsSecondaryInfomation = document.createElement('div');
-formCreatedGoodsSecondaryInfomation.classList.add('form-created-goods__secondary-infomation')
+formCreatedGoodsSecondaryInfomation.classList.add('form-created-goods__secondary-infomation');
 formCreatedGoodsSecondaryInfomation.classList.add('secondary-infomation');
-pageFormCreatedGoods.append(formCreatedGoodsSecondaryInfomation)
+pageFormCreatedGoods.append(formCreatedGoodsSecondaryInfomation);
+
 let secondaryInfomationBlockInput = document.createElement('div');
-secondaryInfomationBlockInput.classList.add('secondary-infomation__block-input')
+secondaryInfomationBlockInput.classList.add('secondary-infomation__block-input');
 secondaryInfomationBlockInput.classList.add('block-input');
-formCreatedGoodsSecondaryInfomation.append(secondaryInfomationBlockInput)
+formCreatedGoodsSecondaryInfomation.append(secondaryInfomationBlockInput);
 
 let blockInputImage = document.createElement('input');
 blockInputImage.classList.add('block-input__input');
@@ -147,7 +148,7 @@ let blockInputLabelImage = document.createElement('label');
 blockInputLabelImage.classList.add('block-input__label');
 blockInputLabelImage.innerText = 'Picture';
 
-secondaryInfomationBlockInput.append(blockInputImage, blockInputLabelImage)
+secondaryInfomationBlockInput.append(blockInputImage, blockInputLabelImage);
 
 let secondaryInfomationDescription = document.createElement('div');
 secondaryInfomationDescription.classList.add('secondary-infomation__description');
@@ -174,4 +175,4 @@ formCreatedGoodsBtn.addEventListener('mouseover', () => {
 formCreatedGoodsBtn.addEventListener('mouseout', () => {
 	formCreatedGoodsBtn.style.backgroundColor = 'yellowgreen';
 })
-pageFormCreatedGoods.append(formCreatedGoodsBtn)
+pageFormCreatedGoods.append(formCreatedGoodsBtn);
