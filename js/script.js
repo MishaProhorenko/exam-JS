@@ -202,6 +202,7 @@ containerSearchLabel.classList.add('container-search__label');
 let iconSearch = document.createElement('i');
 iconSearch.classList.add('fas');
 iconSearch.classList.add('fa-search');
+iconSearch.classList.add('fa-2x');
 containerSearchLabel.append(iconSearch);
 
 containerSearchBlock.append(containerSearchInput, containerSearchLabel);
@@ -240,3 +241,33 @@ searchPriceSegmentPremiumLabel.innerText = 'Premium';
 searchPriceSegmentPremiumLabel.append(searchPriceSegmentPremiumInput);
 
 searchPriceSegment.append(searchPriceSegmentCheapLabel, searchPriceSegmentOptiomalLabel, searchPriceSegmentPremiumLabel);
+
+
+let pageGallary = document.createElement('section');
+pageGallary.classList.add('page__gallary');
+pageGallary.classList.add('gallary');
+main.append(pageGallary);
+
+let gallaryTitle = document.createElement('h2');
+gallaryTitle.classList.add('gallary__title');
+gallaryTitle.innerText = 'Gallary';
+pageGallary.append(gallaryTitle);
+
+let gallaryCarts = document.createElement('div');
+gallaryCarts.classList.add('gallary__carts');
+gallaryCarts.classList.add('carts');
+pageGallary.append(gallaryCarts);
+
+
+// btn.addEventListener('click', () => {
+// 	let cart = document.createElement('div');
+// 	cart.classList.add('carts__cart');
+// 	cart.classList.add('cart');
+
+// 	let cartImg = document.createElement('img');
+// 	cartImg.classList.add('cart__img');
+// 	cartImg.src = `${}`
+// })
+
+
+
