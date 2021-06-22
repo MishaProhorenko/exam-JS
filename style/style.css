@@ -254,6 +254,8 @@ h1, h2, h3, h4, h5, h6 {
 .gallary__carts {
 	width: 90%;
 	border: 1px solid red;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .gallary__title {
@@ -275,7 +277,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .cart {}
 
-.cart__img {}
+.cart__img {
+	width: 100px;
+	height: 100px;
+}
 
 .cart__name {}
 

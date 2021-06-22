@@ -57,6 +57,7 @@ formCreatedGoodsMainInfo.append(mainInfoBlockInputCount);
 let blockInputCount = document.createElement('input');
 blockInputCount.type = 'number';
 blockInputCount.id = 'countGoods';
+blockInputCount.value = ''
 blockInputCount.classList.add('block-input__input');
 
 let blockInputLabelCount = document.createElement('label');
@@ -259,15 +260,45 @@ gallaryCarts.classList.add('carts');
 pageGallary.append(gallaryCarts);
 
 
-// btn.addEventListener('click', () => {
-// 	let cart = document.createElement('div');
-// 	cart.classList.add('carts__cart');
-// 	cart.classList.add('cart');
+// blockInputName blockInputArticle mainInfoBlockInputCount
+// blockInputPrice mainInfoBlockInputDate blockInputImage
 
-// 	let cartImg = document.createElement('img');
-// 	cartImg.classList.add('cart__img');
-// 	cartImg.src = `${}`
-// })
+btn.addEventListener('click', () => {
+	let cart = document.createElement('div');
+	cart.classList.add('carts__cart');
+	cart.classList.add('cart');
+
+	let cartImg = document.createElement('img');
+	cartImg.classList.add('cart__img');
+	cartImg.src = `${blockInputImage.value}`;
+
+	let cartName = document.createElement('div');
+	cartName.classList.add('cart__name');
+	cartName.innerText = `${blockInputName.value}`;
+
+	let cartArticle = document.createElement('div');
+	cartArticle.classList.add('cart__article');
+	cartArticle.innerText = `${blockInputArticle.value}`;
+
+	let cartCount = document.createElement('div');
+	cartCount.classList.add('cart__count');
+	cartCount.innerText = `${mainInfoBlockInputCount.value}`;
+
+	let cartPrice = document.createElement('div');
+	cartPrice.classList.add('cart__price');
+	cartPrice.innerText = `${blockInputPrice.value}`;
+
+	let cartDate = document.createElement('div');
+	cartDate.classList.add('cart__date');
+	cartDate.innerText = `${mainInfoBlockInputDate.value}`;
+
+	// let cartEdit = document.createElement('div');
+	// cartEdit.classList.add('cart__edit');
+	// cartEdit.innerText = `${cartEdit.value}`;
+
+	gallaryCarts.append(cart);
+	cart.append(cartImg, cartName, cartArticle, cartCount, cartPrice, cartDate)
+})
 
 
 
