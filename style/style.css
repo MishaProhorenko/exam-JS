@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	border: 0;
+	/* overflow-x: hidden; */
 }
 
 *, *:before, *:after {
@@ -74,12 +75,13 @@ h1, h2, h3, h4, h5, h6 {
 /* ======================================================= */
 
 .page {
-	width: 1380px;
+	width: 1340px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	max-width: 1380px;
+	max-width: 1340px;
+	
 }
 
 .page__title {
@@ -108,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .block-input {
 	margin: 20px 0;
-	width: 57%;
+	width: 60%;
 	font-size: 1.2em;
 	display: flex;
 	align-items: center;
@@ -237,6 +239,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 2.3em;
 }
 
+.search__price-segment {
+	margin-top: 20px;
+}
+
 .page__gallary {
 	width: 90%;
 	display: flex;
@@ -282,7 +288,9 @@ h1, h2, h3, h4, h5, h6 {
 	height: 100px;
 }
 
-.cart__name {}
+.cart__name {
+	font-weight: 700;
+}
 
 .cart__article {}
 
@@ -291,3 +299,8 @@ h1, h2, h3, h4, h5, h6 {
 .cart__price {}
 
 .cart__date {}
+
+
+._error{
+	box-shadow: 0 0 15px red;
+}
