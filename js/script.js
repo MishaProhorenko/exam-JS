@@ -104,6 +104,7 @@ formCreatedGoodsMainInfo.append(mainInfoBlockInputName);
 let blockInputName = document.createElement('input');
 blockInputName.type = 'text';
 blockInputName.id = 'nameGoods';
+// blockInputName.minlength = '5';
 blockInputName.classList.add('block-input__input');
 
 let blockInputLabelName = document.createElement('label');
@@ -246,7 +247,7 @@ secondaryInfomationDescription.append(secondaryInfomationDescriptionLabel, secon
 
 formCreatedGoodsSecondaryInfomation.append(secondaryInfomationDescription);
 
-let formCreatedGoodsBtn = document.createElement('div');
+let formCreatedGoodsBtn = document.createElement('button');
 formCreatedGoodsBtn.classList.add('form-created-goods__btn');
 formCreatedGoodsBtn.id = 'btn';
 formCreatedGoodsBtn.innerText = 'Submit';
@@ -386,50 +387,53 @@ gallaryCarts.classList.add('gallary__carts');
 gallaryCarts.classList.add('carts');
 pageGallary.append(gallaryCarts);
 
-arrayPhone.forEach(item => {
-	let cart = document.createElement('div');
-	cart.classList.add('carts__cart');
-	cart.classList.add('cart');
+// arrayPhone.forEach(item => {
+// 	let cart = document.createElement('div');
+// 	cart.classList.add('carts__cart');
+// 	cart.classList.add('cart');
 
-	let cartImg = document.createElement('img');
-	cartImg.classList.add('cart__img');
-	cartImg.src = `${item.image}`;
-
-
-
-	let cartName = document.createElement('div');
-
-	cartName.classList.add('cart__name');
-	cartName.innerText = `${item.name}`;
-
-
-	let cartArticle = document.createElement('div');
-	cartArticle.classList.add('cart__article');
-	cartArticle.innerText = `Article: ${item.article}`;
-
-
-	let cartCount = document.createElement('div');
-	cartCount.classList.add('cart__count');
-	cartCount.innerText = `Count: ${item.count}`;
-
-
-	let cartPrice = document.createElement('div');
-	cartPrice.classList.add('cart__price');
-	cartPrice.innerText = `Price: ${item.price}$`;
-
-
-	let cartDate = document.createElement('div');
-	cartDate.classList.add('cart__date');
-	cartDate.innerText = `Date: ${item.date}`;
-
-	gallaryCarts.append(cart);
-	cart.append(cartImg, cartName, cartArticle, cartCount, cartPrice, cartDate)
-	// pageFormCreatedGoods.reset();
-})
+// 	let cartImg = document.createElement('img');
+// 	cartImg.classList.add('cart__img');
+// 	cartImg.src = `${item.image}`;
 
 
 
-btn.addEventListener('click', () => {
+// 	let cartName = document.createElement('div');
+
+// 	cartName.classList.add('cart__name');
+// 	cartName.innerText = `${item.name}`;
+
+
+// 	let cartArticle = document.createElement('div');
+// 	cartArticle.classList.add('cart__article');
+// 	cartArticle.innerText = `Article: ${item.article}`;
+
+
+// 	let cartCount = document.createElement('div');
+// 	cartCount.classList.add('cart__count');
+// 	cartCount.innerText = `Count: ${item.count}`;
+
+
+// 	let cartPrice = document.createElement('div');
+// 	cartPrice.classList.add('cart__price');
+// 	cartPrice.innerText = `Price: ${item.price}$`;
+
+
+// 	let cartDate = document.createElement('div');
+// 	cartDate.classList.add('cart__date');
+// 	cartDate.innerText = `Date: ${item.date}`;
+
+// 	gallaryCarts.append(cart);
+// 	cart.append(cartImg, cartName, cartArticle, cartCount, cartPrice, cartDate)
+// 	// pageFormCreatedGoods.reset();
+// })
+
+
+
+
+
+btn.addEventListener('click', (e) => {
+	e.preventDefault()
 	let cart = document.createElement('div');
 	cart.classList.add('carts__cart');
 	cart.classList.add('cart');
@@ -437,7 +441,6 @@ btn.addEventListener('click', () => {
 	let cartImg = document.createElement('img');
 	cartImg.classList.add('cart__img');
 	cartImg.src = `${blockInputImage.value}`;
-
 
 
 	let cartName = document.createElement('div');
@@ -473,6 +476,20 @@ btn.addEventListener('click', () => {
 	cart.append(cartImg, cartName, cartArticle, cartCount, cartPrice, cartDate)
 	pageFormCreatedGoods.reset();
 })
+
+
+
+// blockInputName.addEventListener('change', (e) => {
+// 	if (e.target.value.length < 5) {
+// 		blockInputName.classList.add('_error')
+// 		blockInputName.value = 'введите имя больше 5 символов';
+// 	} else {
+// 		blockInputName.classList.remove('_error')
+// 		blockInputName.value = `${blockInputName.value}`
+// 	}
+// });
+
+
 
 
 
